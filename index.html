@@ -5,7 +5,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
     $(function() {
-      $.get('https://foursquare.com/irace/list/work-lunch', function(response) {
+      $.get('http://foursquare.com/irace/list/work-lunch', function(response) {
         var places = $.map($(response).find('.s-list-item a'), function(place) {
           return $(place).text();
         });
