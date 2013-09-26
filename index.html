@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lunchr</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $.get('https://foursquare.com/irace/list/work-lunch', function(response) {
+        var places = $.map($(response).find('.s-list-item a'), function(place) {
+          return $(place).text();
+        });
+
+        function chooseRandomPlace() {
+          $('#place').text(places[Math.floor(Math.random() * places.length)]);
+        }
+
+        chooseRandomPlace();
+
+        $('#button').click(chooseRandomPlace);
+      });
+    });
+  </script>
+
+  <style>
+    body {
+      margin-top: 100;
+      background-color: #2c4762;
+      text-align: center;
+      font-family: 'Courier', monospace;
+    }
+
+    h1 {
+      font-weight: normal;
+      color: white;
+      font-size: 50px;
+    }
+
+    button {
+      background-color: #ededed;
+      border-radius: 4px;
+      border: 1px solid white;
+
+      color: #63626B;
+
+      font-size: 30px;
+      font-weight: bold;
+      font-style: normal;
+
+      height: 70px;
+
+      width: 200px;
+
+      text-decoration: none;
+      text-align: center;
+    }
+
+    button:hover {
+      background-color: #cccccc;
+      border: 1px solid #cccccc;
+    }
+
+    button:active {
+      position: relative;
+      top: 1px;
+    }
+  </style>
+</head>
+<body>
+  <h1>You should go to <br/><span id="place"></span></h1>
+  <button id="button">Naw</button>
+</body>
+</html>
