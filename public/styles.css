@@ -1,0 +1,63 @@
+body, html, .inner, .outer {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  color: white;
+}
+
+.outer {
+  display: table;
+}
+
+.inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+button {
+  background-color: #ededed;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+
+  color: #444444;
+  font-size: 30px;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+
+  height: 70px;
+  width: 300px;
+}
+
+button:hover {
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+}
+
+button:focus {
+  outline: 0;
+}

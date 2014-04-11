@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lunchr</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="outer">
+    <div class="inner">
+      <header>
+        <h2 id="intro"></h2>
+        <h1 id="venue"></h1>
+      </header>
+
+      <button id="button">Somewhere else</button>
+    </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+
+  <script>
+    $(function() {
+      var backgroundColors = ['#ee9825', '#41ce4d', '#c73731', '#5e909b', '#5843c7', '#3a89b5'];
+
+      function chooseRandomPlace() {
+        $.get('/random', function(response) {
+          $('#intro').text(response.intro);
+          $('#venue').text(response.venue);
+
+          $('body').css('background-color', _.sample(backgroundColors));
+        });
+      }
+
+      chooseRandomPlace();
+
+      $('#button').click(chooseRandomPlace);
+    });
+  </script>
+
+</body>
+</html>
