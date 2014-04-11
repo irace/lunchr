@@ -22,8 +22,8 @@ var venues;
 
 var loadVenues = function () {
     var query = qs.stringify({
-    client_id: 'IUWMBGIE1YVVYO3UDDJOJKVCIY3CTJ5HNDH4H5LSZAOHMXYT',
-    client_secret: 'A40SPXO1BF2CKOQPES5DIGW0VY2Z1FKTGJ4QX0BAXYOEJN4J',
+    client_id: process.env.FOURSQUARE_CLIENT_ID,
+    client_secret: process.env.FOURSQUARE_CLIENT_SECRET,
     v: '20131103'
   });
 
