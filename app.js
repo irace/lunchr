@@ -13,6 +13,7 @@ var intros = [
   'Know what would hit the spot?',
   'Feels like a day for',
   'Why not go to',
+  'Need somethin healthy. How \'bout',
   'Indulge in some',
   'What about',
   'Hmm...',
