@@ -10,6 +10,7 @@ var intros = [
   'Definitely time for some',
   'Don\'t you feel like',
   'How about',
+  'GET ME SOME FUCKING',
   'Know what would hit the spot?',
   'Feels like a day for',
   'Why not go to',
