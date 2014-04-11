@@ -26,7 +26,7 @@ var intros = [
 
 var venues;
 
-var loadVenues = function () {
+(function () {
   var query = qs.stringify({
     client_id: process.env.FOURSQUARE_CLIENT_ID,
     client_secret: process.env.FOURSQUARE_CLIENT_SECRET,
@@ -40,7 +40,7 @@ var loadVenues = function () {
       return item.venue.name;
     });
   });
-}();
+}());
   
 app.use(express.static('public'));
 
