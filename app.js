@@ -6,12 +6,15 @@ var _       = require('underscore')
 
 var intros = [
   'You should go to',
+  'Dude.',
+  'Definitely time for some',
   'Don\'t you feel like',
   'How about',
+  'Know what would hit the spot?',
   'Feels like a day for',
   'Why not go to',
   'What about',
-  'Treat yourself to some',
+  'Treat yourself',
   'Aren\'t you in the mood for',
   'Maybe',
   'Been a while since you\'ve gone to',
