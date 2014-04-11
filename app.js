@@ -11,7 +11,7 @@ var intros = [
   'Feels like a day for',
   'Why not go to',
   'What about',
-  'You should treat yourself to',
+  'Treat yourself to some',
   'Aren\'t you in the mood for',
   'Maybe',
   'Been a while since you\'ve gone to',
