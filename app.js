@@ -24,13 +24,15 @@ var intros = [
 var venues;
 
 var loadVenues = function () {
-    var query = qs.stringify({
+  var query = qs.stringify({
     client_id: process.env.FOURSQUARE_CLIENT_ID,
     client_secret: process.env.FOURSQUARE_CLIENT_SECRET,
     v: '20131103'
   });
 
-  request('https://api.foursquare.com/v2/lists/5211139711d2019ea4f04f89/?' + query, function (error, response, body) {
+  var listID = '5211139711d2019ea4f04f89';
+
+  request('https://api.foursquare.com/v2/lists/' + listID + '/?' + query, function (error, response, body) {
     venues = _.map(JSON.parse(body).response.list.listItems.items, function (item) {
       return item.venue.name;
     });
