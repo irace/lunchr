@@ -16,6 +16,7 @@ var intros = [
   'Indulge in some',
   'What about',
   'Hmm...',
+  'Jonesing for some',
   'Let\'s treat ourselves to',
   'Aren\'t you in the mood for',
   'Maybe',
