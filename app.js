@@ -47,7 +47,7 @@ var venues;
 app.use(express.static('public'));
 
 app.get('/random', function (request, response) {
-  response.send({
+  response.json({
     intro: _.sample(intros),
     venue: _.sample(venues)
   });
