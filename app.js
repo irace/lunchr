@@ -50,8 +50,8 @@ app.get('/random', function (request, response) {
 
   response.json({
     intro: _.sample(intros),
-    venue_name: venue.name,
-    venue_url: venue.url
+    name: venue.name,
+    id: venue.id
   });
 });
 

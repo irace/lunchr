@@ -27,8 +27,8 @@
       function chooseRandomPlace() {
         $.get('/random', function(response) {
           $('#intro').text(response.intro);
-          $('#venue').text(response.venue_name);
-          $('#venue').attr('href', response.venue_url);
+          $('#venue').text(response.name);
+          $('#venue').attr('href', response.id);
 
           $('body').css('background-color', _.sample(backgroundColors));
         });
