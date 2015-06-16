@@ -30,8 +30,8 @@ var venues;
 
 (function () {
   var query = qs.stringify({
-    client_id: process.env.FOURSQUARE_CLIENT_ID,
-    client_secret: process.env.FOURSQUARE_CLIENT_SECRET,
+    client_id: 'FQGWCGTOG0TQABLSBTJGTM1E13IWLI3VIQYFY0DCDCXL3KJW',
+    client_secret: '1KHTEKXZUC03DX3CDUDFDVLP4WXP1ELVHA2K0AMNFYM2D5QS',
     v: '20131103'
   });
 
@@ -39,7 +39,7 @@ var venues;
 
   request('https://api.foursquare.com/v2/lists/' + listID + '/?' + query, function (error, response, body) {
     venues = _.map(JSON.parse(body).response.list.listItems.items, function (item) {
-      return item.venue.name;
+      return item.venue;
     });
   });
 }());
@@ -47,9 +47,12 @@ var venues;
 app.use(express.static('public'));
 
 app.get('/random', function (request, response) {
+  var venue = _.sample(venues);
+
   response.send({
     intro: _.sample(intros),
-    venue: _.sample(venues)
+    venue_name: venue.name,
+    venue_url: venue.canonicalUrl
   });
 });
 
