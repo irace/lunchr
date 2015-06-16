@@ -8,8 +8,15 @@ body, html, .inner, .outer {
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
-  color: white;
   background-color: #ee9825;
+}
+
+body,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
 }
 
 .outer {

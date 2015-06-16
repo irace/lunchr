@@ -22,8 +22,7 @@ var intros = [
   'Let’s treat ourselves to',
   'Aren’t you in the mood for',
   'Maybe',
-  'Been a while since you’ve gone to',
-  'I think Brandon really wants'
+  'Been a while since you’ve gone to'
 ];
 
 var venues;
