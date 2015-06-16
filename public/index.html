@@ -28,7 +28,7 @@
         $.get('/random', function(response) {
           $('#intro').text(response.intro);
           $('#venue').text(response.name);
-          $('#venue').attr('href', response.id);
+          $('#venue').attr('href', 'http://foursquare.com/v/' + response.id);
 
           $('body').css('background-color', _.sample(backgroundColors));
         });
