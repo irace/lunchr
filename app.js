@@ -8,21 +8,21 @@ var intros = [
   'You should go to',
   'Dude.',
   'Definitely time for some',
-  'Don\'t you feel like',
+  'Don’t you feel like',
   'How about',
   'GET ME SOME FUCKING',
   'Know what would hit the spot?',
   'Feels like a day for',
   'Why not go to',
-  'Need somethin healthy. How \'bout',
+  'Need somethin healthy. How ’bout',
   'Indulge in some',
   'What about',
   'Hmm...',
   'Jonesing for some',
-  'Let\'s treat ourselves to',
-  'Aren\'t you in the mood for',
+  'Let’s treat ourselves to',
+  'Aren’t you in the mood for',
   'Maybe',
-  'Been a while since you\'ve gone to',
+  'Been a while since you’ve gone to',
   'I think Brandon really wants'
 ];
 
@@ -49,7 +49,7 @@ app.use(express.static('public'));
 app.get('/random', function (request, response) {
   var venue = _.sample(venues);
 
-  response.send({
+  response.json({
     intro: _.sample(intros),
     venue_name: venue.name,
     venue_url: venue.canonicalUrl
