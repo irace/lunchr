@@ -1,6 +1,6 @@
 # Lunchr
 
-Suggests random lunch destinations near Tumblr HQ, using the [Foursquare API](http://api.foursquare.com).
+Suggests random destinations from a list, using the [Foursquare API](http://api.foursquare.com).
 
 To run your own Lunchr:
 
