@@ -10,14 +10,14 @@ var intros = [
   'Definitely time for some',
   'Don’t you feel like',
   'How about',
-  'GET ME SOME FUCKING',
+  'LET’S GET SOME FUCKING',
   'Know what would hit the spot?',
   'Feels like a day for',
   'Why not go to',
   'Need somethin healthy. How ’bout',
   'Indulge in some',
   'What about',
-  'Hmm...',
+  'Hmm…',
   'Jonesing for some',
   'Let’s treat ourselves to',
   'Aren’t you in the mood for',
@@ -31,7 +31,7 @@ var venues;
   var query = qs.stringify({
     client_id: 'FQGWCGTOG0TQABLSBTJGTM1E13IWLI3VIQYFY0DCDCXL3KJW',
     client_secret: '1KHTEKXZUC03DX3CDUDFDVLP4WXP1ELVHA2K0AMNFYM2D5QS',
-    v: '20131103'
+    v: '2099890'
   });
 
   var listID = '565f32b4498e2478e1386369';
