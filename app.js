@@ -31,10 +31,10 @@ var venues;
   var query = qs.stringify({
     client_id: 'FQGWCGTOG0TQABLSBTJGTM1E13IWLI3VIQYFY0DCDCXL3KJW',
     client_secret: '1KHTEKXZUC03DX3CDUDFDVLP4WXP1ELVHA2K0AMNFYM2D5QS',
-    v: '2099890'
+    v: '20131103'
   });
 
-  var listID = '565f32b4498e2478e1386369';
+  var listID = '58f0d69a9411f232d35ed948';
 
   request('https://api.foursquare.com/v2/lists/' + listID + '/?' + query, function (error, response, body) {
     venues = _.map(JSON.parse(body).response.list.listItems.items, function (item) {
